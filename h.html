@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>30 Min AR Demo</title>
+    <!-- Include A-Frame and AR.js libraries -->
+    <script src="https://aframe.io"></script>
+    <script src="https://githack.com"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden;">
+    <!-- Setup the AR scene tracking the camera -->
+    <a-scene embedded arjs>
+      <!-- Define the preset 'hiro' marker -->
+      <a-marker preset="hiro">
+        <!-- The 3D box that will appear on the marker -->
+        <a-box position="0 0.5 0" material="color: yellow;" animation="property: rotation; to: 0 360 0; loop: true; dur: 2000"></a-box>
+      </a-marker>
+      
+    </a-scene>
+  </body>
+</html>
